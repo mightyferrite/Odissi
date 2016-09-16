@@ -121,6 +121,7 @@
   <ItemGroup>
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
+    <Compile Include="AudioService.cs" />
   </ItemGroup>
   <Import Project="..\Odissi\Odissi.projitems" Label="Shared" Condition="Exists('..\Odissi\Odissi.projitems')" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />

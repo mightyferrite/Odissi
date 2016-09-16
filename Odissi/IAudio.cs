@@ -1,11 +1,9 @@
 ﻿using System;
 namespace Odissi
 {
-	public class IAudio
+	public interface IAudio
 	{
-		public IAudio()
-		{
-		}
+		void PlayAudioFile(string fileName);
 	}
 }
 

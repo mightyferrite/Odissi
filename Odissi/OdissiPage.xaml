@@ -1,4 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:Odissi" x:Class="Odissi.OdissiPage">
-	<Label Text="Welcome to Xamarin Forms!" VerticalOptions="Center" HorizontalOptions="Center" />
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+		xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+		xmlns:local="clr-namespace:Odissi" 
+		x:Class="Odissi.OdissiPage"
+		Title="Achumawi">
+	<ContentPage.Content>
+		<StackLayout Spacing="10" x:Name="layout" HorizontalOptions="CenterAndExpand" BackgroundColor="White">
+			<StackLayout.Children>
+			<Label Text="Odissi" FontAttributes="Bold" HorizontalOptions="Center" FontSize="Large" TextColor="Gray" BackgroundColor="White"/>
+			<ListView x:Name="WordView">
+			    <ListView.ItemTemplate>
+					<DataTemplate>
+					<TextCell Text="{Binding Achumawi}" Detail="{Binding English}"/>
+					</DataTemplate>
+			    </ListView.ItemTemplate>
+			</ListView>
+				</StackLayout.Children>
+		</StackLayout>
+	</ContentPage.Content>
 </ContentPage>
