@@ -1,5 +1,7 @@
 #Autosave files
 *~
+bin
+obj
 
 #build
 [Oo]bj/
@@ -27,6 +29,10 @@ autom4te.cache/
 tarballs/
 test-results/
 Thumbs.db
+*.nib
+*.pfx
+*.suo
+*.swp
 
 #Mac bundle stuff
 *.dmg
